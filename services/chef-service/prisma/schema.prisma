@@ -1,0 +1,33 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Perfil do Chef: Onde guardamos a biografia e especialidades
+model ChefProfile {
+  id              String   @id @default(uuid())
+  chefId          String   @unique // ID que virá do sistema de Autenticação
+  bio             String?
+  especialidades  String[] // Ex: ["Cozinha Italiana", "Pastelaria"]
+  fotoUrl         String?
+  rating          Float    @default(5.0)
+  menus           Menu[]
+  createdAt       DateTime @default(now())
+}
+
+// Menus: O produto que o Chef oferece
+model Menu {
+  id           String       @id @default(uuid())
+  titulo       String
+  descricao    String
+  precoBase    Float        // Valor que o Chef recebe
+  chefProfile  ChefProfile  @relation(fields: [chefId], references: [id])
+  chefId       String
+  itens        String[]     // Lista de pratos
+  disponivel   Boolean      @default(true)
+  createdAt    DateTime     @default(now())
+}

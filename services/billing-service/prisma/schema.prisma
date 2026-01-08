@@ -1,0 +1,31 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-id"
+}
+
+model ChefProfile {
+  id              String   @id @default(uuid())
+  chefId          String   @unique // ID vindo do Auth
+  bio             String?
+  especialidades  String[] // Ex: ["Portuguesa", "Vegan"]
+  fotoUrl         String?
+  rating          Float    @default(5.0)
+  menus           Menu[]
+  createdAt       DateTime @default(now())
+}
+
+model Menu {
+  id           String       @id @default(uuid())
+  titulo       String
+  descricao    String
+  precoBase    Float        // Preço que o Chef quer receber
+  chefProfile  ChefProfile  @relation(fields: [chefId], references: [id])
+  chefId       String
+  itens        String[]     // Lista de pratos no menu
+  disponivel   Boolean      @default(true)
+  createdAt    DateTime     @default(now())
+}
