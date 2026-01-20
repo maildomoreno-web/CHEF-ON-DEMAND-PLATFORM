@@ -104,6 +104,33 @@ export async function getAllBookings() {
 }
 
 /**
+ * MÓDULO 04: CLIENTES
+ * Obtém a base de clientes com cálculo de LTV e histórico
+ */
+export async function getAllCustomers() {
+  try {
+    const data = await sql`
+      SELECT 
+        u.id,
+        u.full_name,
+        u.email,
+        COUNT(b.id)::int as total_bookings,
+        COALESCE(SUM(b.total_amount), 0)::float as total_spent,
+        MAX(b.event_date) as last_booking
+      FROM users u
+      LEFT JOIN bookings b ON u.id = b.client_id
+      WHERE u.role = 'client'
+      GROUP BY u.id, u.full_name, u.email
+      ORDER BY total_spent DESC;
+    `;
+    return data;
+  } catch (error) {
+    console.error('Erro ao buscar clientes:', error);
+    return [];
+  }
+}
+
+/**
  * MÓDULO 08: FINANCEIRO
  * Obtém todos os registos financeiros para o Módulo 08
  */
