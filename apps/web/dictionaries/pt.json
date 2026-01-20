@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "manifesto": "Manifesto",
+    "about": "Quem Somos",
+    "services": "Serviços",
+    "events": "Eventos",
+    "contact": "Contacto",
+    "book": "Reservar"
+  },
+  "searchPlaceholder": "Que tipo de cozinha procuras?",
+  "searchBtn": "Pesquisar",
+  "howItWorks": "Como funciona",
+  "step1Title": "Chefs Selecionados",
+  "step1Desc": "Trabalhamos com chefs independentes, escolhidos pela sua experiência e profissionalismo.",
+  "step2Title": "Pedido simples",
+  "step2Desc": "Indica data, local e tipo de serviço. Propomos chefs adequados ao teu pedido.",
+  "step3Title": "Tudo definido à partida",
+  "step3Desc": "Menus, valores e detalhes do serviço são acordados antes da confirmação.",
+  "joinChefTitle": "Faz sentido para si cozinhar em contextos privados?",
+  "joinChefSubtitle": "Ligamos chefs a pedidos privados, alinhados com o seu perfil.",
+  "joinChefBtn": "Candidatar-me",
+  "contact": {
+    "tag": "Contacto",
+    "title": "Inicie a sua Jornada Gastronómica",
+    "intro": "Seja para um evento privado, uma dúvida sobre a plataforma ou uma parceria exclusiva, a nossa equipa está à sua disposição.",
+    "form": {
+      "name": "Nome Completo",
+      "email": "E-mail Profissional",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem",
+      "subjects": {
+        "event": "Evento Privado",
+        "chef": "Chef",
+        "marketing": "Marketing & Publicidade",
+        "press": "Imprensa",
+        "support": "Suporte Técnico",
+        "other": "Outros Assuntos"
+      }
+    },
+    "info": {
+      "office": "Sede Institucional",
+      "social": "Redes Sociais",
+      "general": {
+        "label": "Informações Gerais",
+        "desc": "Questões sobre o conceito e funcionamento da plataforma."
+      },
+      "support": {
+        "label": "Helpdesk & Apoio ao Cliente",
+        "desc": "Assistência dedicada para garantir a excelência da sua experiência."
+      },
+      "partners": {
+        "label": "Relações com Parceiros",
+        "desc": "Suporte técnico e operacional exclusivo para Chefs e fornecedores."
+      },
+      "marketing": {
+        "label": "Comunicação e Relações Públicas",
+        "desc": "Parcerias estratégicas, media e relações institucionais."
+      }
+    }
+  },
+  "exclusiveEvents": {
+    "tag": "Bilheteira",
+    "title": "Experiências Exclusivas",
+    "intro": "Momentos irrepetíveis desenhados por especialistas.",
+    "categories": {
+      "popup": "Pop-Up",
+      "workshop": "Workshop",
+      "masterclass": "Masterclass",
+      "tasting": "Prova de Vinhos",
+      "mixology": "Mixologia"
+    },
+    "status": {
+      "open": "Inscrições Abertas",
+      "lastSeats": "Últimos Lugares",
+      "soldOut": "Esgotado"
+    },
+    "labels": {
+      "reserve": "Reservar Bilhete",
+      "discover": "Descobrir",
+      "perPerson": "por pessoa"
+    }
+  },
+  "manifesto": {
+    "tag": "Manifesto",
+    "title": "Chef on Demand",
+    "intro": "Acreditamos que a gastronomia não é um serviço. É um ato de presença.",
+    "worldContext": "Num mundo acelerado, padronizado e impessoal, escolhemos o oposto:",
+    "values": "tempo, rigor, intenção.",
+    "p1": "A Chef on Demand nasce do respeito profundo pelo ofício. Pelo gesto do chef. Pelo silêncio antes do serviço. Pelo detalhe que não se explica, sente-se.",
+    "p2": "Não acreditamos em experiências fabricadas. Acreditamos em refeições pensadas para pessoas reais, em lugares reais, no tempo certo.",
+    "p3": "Aqui, o chef não é um fornecedor. É um profissional com identidade, método e responsabilidade. E o cliente não é um número. É alguém que escolhe com critério e exige com razão.",
+    "pillars": {
+      "p1": "Liberdade Criativa",
+      "p1Sub": "com disciplina",
+      "p2": "Autonomia",
+      "p2Sub": "com compromisso",
+      "p3": "Excelência",
+      "p3Sub": "sem arrogância"
+    },
+    "tech": {
+      "main": "A tecnologia existe para servir o essencial, não para o substituir.",
+      "item1": "Por isso criámos uma plataforma que simplifica sem empobrecer,",
+      "item2": "que organiza sem engessar,",
+      "item3": "que escala sem desumanizar."
+    },
+    "conclusionTitle": "Chef on Demand não é sobre luxo.",
+    "conclusionValue": "É sobre valor.",
+    "footerValues": ["Valor no tempo", "Valor no saber-fazer", "Valor na confiança"],
+    "finalStatement": "Estamos aqui para devolver à gastronomia aquilo que nunca devia ter perdido: respeito, verdade e intenção."
+  },
+  "about": {
+    "tag": "Quem Somos",
+    "title": "Chef on Demand",
+    "intro": "A Chef on Demand é uma plataforma premium de serviços gastronómicos personalizados, que liga chefs profissionais a clientes que procuram experiências culinárias privadas, flexíveis e de elevada qualidade.",
+    "model": "Operamos no cruzamento entre gastronomia, hospitalidade e tecnologia, com um modelo pensado para funcionar de forma simples para o cliente e justa para o profissional.",
+    "market": "Desenhada para as exigências do <strong>turismo premium</strong>, do mercado residencial de <strong>média-alta</strong> e de contextos onde o <span class='text-gold italic'>tempo, a confiança e a previsibilidade</span> são essenciais.",
+    "freedom": "Na Chef on Demand, os chefs mantêm <strong>total liberdade criativa e controlo</strong> sobre os seus serviços: <br/><br/> • Menus fechados e degustação <br/> • Serviços pontuais ou multi-dia <br/> • Adaptação total a cada contexto.",
+    "client": "Acesso <strong>direto e transparente</strong> à oferta disponível, com rapidez e capacidade de decisão em poucos passos. <br/><br/> <span class='text-zinc-500'>Sem processos longos, sem pedidos por email, sem negociações indefinidas.</span>",
+    "notAgency": "Não somos uma agência tradicional. Criamos <strong>estrutura e ferramentas</strong> para que o serviço aconteça com qualidade, consistência e responsabilidade.",
+    "vision": "A Chef on Demand é construída por profissionais da área, para profissionais da área, com uma vision clara de crescimento, escala e internacionalização — sem nunca comprometer o rigor do ofício."
+  },
+  "services": {
+    "tag": "Experiências",
+    "title": "A Arte do Serviço",
+    "intro": "Cada contexto exige uma abordagem única. Desenhámos três dimensões de serviço para garantir que a sua expectativa encontra a precisão do chef.",
+    "private": {
+      "title": "Private Dining",
+      "tagline": "Exclusividade e Intimidade.",
+      "desc": "O foco é a <strong>experiência privada</strong>. Ideal para celebrações ou momentos onde o rigor gastronómico e a companhia são as únicas prioridades.",
+      "items": ["Menus de Degustação", "Jantares de Celebração", "Business Dinner"]
+    },
+    "stays": {
+      "title": "Stays & Vacations",
+      "tagline": "Continuidade e Conforto.",
+      "desc": "A solução para <strong>estadias e turismo premium</strong>. Gestão gastronómica diária com consistência e adaptação total ao seu ritmo.",
+      "items": ["Breakfast & Lunch", "Gestão de Despensa", "Serviço Multi-dia"]
+    },
+    "bespoke": {
+      "title": "Bespoke Events",
+      "tagline": "Visão e Personalização.",
+      "desc": "Para contextos que exigem uma <strong>resposta única</strong>. Do corporativo a eventos privados desenhados rigorosamente à medida.",
+      "items": ["Eventos Corporativos", "Pop-ups Gastronómicos", "Experiências Temáticas"]
+    }
+  }
+}
