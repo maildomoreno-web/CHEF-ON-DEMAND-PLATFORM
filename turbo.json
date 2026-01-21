@@ -4,7 +4,7 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**", "dist/**"],
-      "env": ["DATABASE_URL", "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY"]
+      "env": ["DATABASE_URL", "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY", "BREVO_API_KEY"]
     },
     "lint": {
       "dependsOn": ["^lint"]

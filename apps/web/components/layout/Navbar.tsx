@@ -1,3 +1,4 @@
+// apps/web/components/layout/Navbar.tsx
 import React from 'react';
 import Link from 'next/link';
 
@@ -22,28 +23,13 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     { label: dict.contact, href: `/${lang}/contact` },
   ];
 
-  const adminLinks = [
-    { label: "ChefPanel", href: "/chef-dashboard" },
-    { label: "AdminPanel", href: "/admin" },
-  ];
-
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/5 bg-black/60 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-6">
         
-        {/* Top bar */}
-        <div className="flex justify-end gap-6 border-b border-white/[0.03] py-2">
-          {adminLinks.map((link) => (
-            <Link 
-              key={link.label} 
-              href={link.href} 
-              className="font-source-sans text-[9px] font-medium uppercase tracking-[0.2em] text-zinc-500 hover:text-gold transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-          <div className="flex gap-2 font-source-sans text-[9px] font-medium tracking-widest text-zinc-500">
-            {/* Correção: Links de idioma agora forçam a rota correta */}
+        {/* Language bar - Lettering aumentado para 11px SemiBold */}
+        <div className="flex justify-end py-3">
+          <div className="flex gap-4 font-source-sans text-[11px] font-semibold tracking-[0.2em] text-zinc-400 uppercase">
             <Link href="/pt" className={lang === 'pt' ? 'text-gold' : 'hover:text-white transition-colors'}>PT</Link>
             <span className="opacity-20">|</span>
             <Link href="/en" className={lang === 'en' ? 'text-gold' : 'hover:text-white transition-colors'}>EN</Link>
@@ -58,7 +44,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             </span>
           </Link>
           
-          <div className="hidden space-x-10 md:flex">
+          <div className="hidden space-x-12 md:flex">
             {navLinks.map((link) => (
               <Link 
                 key={link.label} 
@@ -70,9 +56,8 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             ))}
           </div>
 
-          <button className="font-source-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-black bg-gold px-6 py-2.5 hover:bg-white transition-all active:scale-95">
-            {dict.book}
-          </button>
+          {/* Botão Reservar removido para despoluir a interface */}
+          <div className="w-[1px] md:w-auto"></div>
         </div>
       </div>
     </nav>
